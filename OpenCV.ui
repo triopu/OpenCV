@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="start_button">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="stop_button">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>10</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image_label1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>480</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image_label2">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>40</y>
+     <width>480</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="track_button">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Track</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>410</y>
+     <width>291</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>H_Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="h_max">
+        <property name="maximum">
+         <number>179</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>S_Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="s_max">
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>V_Max</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="v_max">
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="current_value">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>421</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Current Value -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>291</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>H_Min</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="h_min">
+        <property name="maximum">
+         <number>179</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>S_Min</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="s_min">
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>V_Min</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="v_min">
+        <property name="maximum">
+         <number>255</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="color1_value">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>470</y>
+     <width>361</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C1 -&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="color1_button">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>430</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Color</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="color_1">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>410</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Color 1</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="color_2">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>410</y>
+     <width>91</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Color 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="color2_button">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>430</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Set Color</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="color2_value">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>490</y>
+     <width>361</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>C2 -&gt;</string>
+   </property>
+  </widget>
+  <zorder>start_button</zorder>
+  <zorder>stop_button</zorder>
+  <zorder>track_button</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_3</zorder>
+  <zorder>image_label2</zorder>
+  <zorder>image_label1</zorder>
+  <zorder>current_value</zorder>
+  <zorder>color1_value</zorder>
+  <zorder>color1_button</zorder>
+  <zorder>color_1</zorder>
+  <zorder>color_2</zorder>
+  <zorder>color2_button</zorder>
+  <zorder>color2_value</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
